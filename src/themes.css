@@ -1,0 +1,87 @@
+:root {
+    /* Brand Colors */
+    --color-primary: #0E43BE;
+    --color-primary-hover: #0B3599;
+    --color-on-primary: #FFFFFF;
+
+    --color-secondary: #FFCB00;
+    --color-secondary-hover: #E6B600;
+    --color-on-secondary: #191C1F;
+
+    /* Status Colors */
+    --color-sale: #E52E2E;
+    --color-sale-hover: #C92424;
+    --color-success: #40B44A;
+    --color-stars: #FFA800;
+
+    /* Neutrals (Text & Backgrounds) */
+    --color-text-main: #191C1F;
+    /* Dark charcoal for high readability */
+    --color-text-muted: #5F6C72;
+    /* Cool gray for secondary details */
+    --color-bg-main: #FFFFFF;
+    /* Pure white for page & cards */
+    --color-bg-secondary: #F2F4F5;
+    /* Very light gray for section blocks */
+
+    /* Borders & Inputs */
+    --color-border: #E4E7E9;
+    --color-border-hover: #A3AED0;
+}
+
+[data-theme="dark"] {
+    /* Brand Colors (Dark Mode)*/
+    --color-primary: #1A5CFF;
+    --color-primary-hover: #0E43BE;
+    --color-on-primary: #FFFFFF;
+
+    --color-secondary: #FFCB00;
+    --color-secondary-hover: #E6B600;
+    --color-on-secondary: #191C1F;
+
+    /* Status Colors (Dark Mode)*/
+    --color-sale: #FF4D4D;
+    --color-sale-hover: #E52E2E;
+    --color-success: #46D352;
+    --color-stars: #FFB81A;
+
+    /* Neutrals (Dark Mode) */
+    --color-text-main: #F3F4F6;
+    --color-text-muted: #9AA6AC;
+    --color-bg-main: #0F172A;
+    --color-bg-secondary: #1E293B;
+
+    /* Borders & Inputs (Dark Mode)*/
+    --color-border: #334155;
+    --color-border-hover: #475569;
+}
+
+@theme inline {
+    /* Brand Colors */
+    --color-primary: var(--color-primary);
+    --color-primary-hover: var(--color-primary-hover);
+    --color-on-primary: var(--color-on-primary);
+
+    --color-secondary: var(--color-secondary);
+    --color-secondary-hover: var(--color-secondary-hover);
+    --color-on-secondary: var(--color-on-secondary);
+
+    /* Status Colors */
+    --color-sale: var(--color-sale);
+    --color-sale-hover: var(--color-sale-hover);
+    --color-success: var(--color-success);
+    --color-stars: var(--color-stars);
+
+    /* Neutrals (Text & Backgrounds) */
+    --color-text-main: var(--color-text-main);
+    /* Dark charcoal for high readability */
+    --color-text-muted: var(--color-text-muted);
+    /* Cool gray for secondary details */
+    --color-bg-main: var(--color-bg-main);
+    /* Pure white for page & cards */
+    --color-bg-secondary: var(--color-bg-secondary);
+
+    /* Borders & Inputs */
+    --color-border: var(--color-border);
+    --color-border-hover: var(--color-border-hover);
+}
