@@ -1,10 +1,11 @@
+import Footer from '@/components/ui/footer'
 
 function App() {
 
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <Footer />
+    </>
   )
 }
 

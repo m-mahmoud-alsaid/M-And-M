@@ -84,4 +84,16 @@
     /* Borders & Inputs */
     --color-border: var(--color-border);
     --color-border-hover: var(--color-border-hover);
+
+    --animate-infinite-loop: loop-left 5s linear 0s infinite;
+
+    @keyframes loop-left {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
 }
