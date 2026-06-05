@@ -86,6 +86,7 @@
     --color-border-hover: var(--color-border-hover);
 
     --animate-infinite-loop: loop-left 5s linear 0s infinite;
+    --animate-opacity: opacity 0.3s ease-in 0s 1;
 
     @keyframes loop-left {
         from {
@@ -94,6 +95,16 @@
 
         to {
             transform: translateX(-100%);
+        }
+    }
+
+    @keyframes opacity {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1;
         }
     }
 }
