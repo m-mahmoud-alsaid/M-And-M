@@ -18,7 +18,7 @@ function Footer() {
             <div className='flex gap-12.5 flex-col md:flex-row'>
                 <div className='flex flex-col gap-7 flex-2'>
                     <h4 className='uppercase text-on-primary font-black text-3xl md:text-4xl cursor-pointer'>m&m</h4>
-                    <p className='text-on-primary text-base md:text-lg'>
+                    <p className='text-on-primary text-base md:text-lg opacity-80'>
                         Your ultimate destination for premium tech, fashion, and everyday essentials.
                         We deliver curated, high-quality products with a seamless shopping experience and trusted customer care.
                     </p>
@@ -60,16 +60,16 @@ function Footer() {
                     <p className='text-on-primary font-bold text-xl mb-2.5'>Categories</p>
                     <ul className='flex flex-col gap-2.5 text-on-primary'>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Electronics</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Electronics</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Men's Fashion</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Men's Fashion</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Women's Fashion</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Women's Fashion</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Home & Lifestyle</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Home & Lifestyle</Link>
                         </li>
                     </ul>
                 </div>
@@ -78,19 +78,19 @@ function Footer() {
                     <p className='text-on-primary font-bold text-xl mb-2.5'>Customer Service</p>
                     <ul className='flex flex-col gap-2.5 text-on-primary'>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Contact us</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Contact us</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Track order</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Track order</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Returns & Exchanges</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Returns & Exchanges</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Shopping Info</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Shopping Info</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>FAQ</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>FAQ</Link>
                         </li>
                     </ul>
                 </div>
@@ -99,16 +99,16 @@ function Footer() {
                     <p className='text-on-primary font-bold text-xl mb-2.5'>Information</p>
                     <ul className='flex flex-col gap-2.5 text-on-primary'>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>About us</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>About us</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Privacy policy</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Privacy policy</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Terms & Conditions</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Terms & Conditions</Link>
                         </li>
                         <li className='group'>
-                            <Link to='' className='text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Blog</Link>
+                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Blog</Link>
                         </li>
                     </ul>
                 </div>
