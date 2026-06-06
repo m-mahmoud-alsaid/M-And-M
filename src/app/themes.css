@@ -113,12 +113,12 @@
     --color-glassy-shimmer: var(--glassy-shimmer);
 
     --animate-loop-left: loop-left 8s linear 0s infinite;
-    --animate-opacity: opacity 0.3s ease-in 0s 1;
-    --animate-come-from-top: come-from-top 0.5s ease-out 0s 1;
-    --animate-come-from-bottom: come-from-bottom 0.5s ease-out 0s 1;
-    --animate-come-from-left: come-from-left 0.5s ease-out 0s 1;
-    --animate-come-from-right: come-from-right 0.5s ease-out 0s 1;
-    --animate-grow: grow 0.5s ease-out 0s 1;
+    --animate-opacity: opacity 0.3s ease-in 0s forwards;
+    --animate-come-from-top: come-from-top 0.5s ease-out 0s forwards;
+    --animate-come-from-bottom: come-from-bottom 0.5s ease-out 0s forwards;
+    --animate-come-from-left: come-from-left 0.5s ease-out 0s forwards;
+    --animate-come-from-right: come-from-right 0.5s ease-out 0s forwards;
+    --animate-grow: grow 0.5s ease-out 0s forwards;
     --animate-glassy-shimmer: glassy-shimmer 2s linear 0s infinite;
 
     @keyframes loop-left {
