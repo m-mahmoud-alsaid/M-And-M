@@ -1,20 +1,61 @@
 import { Link } from 'react-router-dom'
-import AppleStore from '@/assets/apple-store.svg'
-import GooglePlay from '@/assets/google-play.svg'
-import Visa from '@/assets/visa.svg'
-import MasterCard from '@/assets/mastercard.svg'
-import Paypal from '@/assets/paypal.svg'
-import AmericanExpress from '@/assets/american-express.svg'
-import ApplePay from '@/assets/apple-pay.svg'
-import GooglePay from '@/assets/google-pay.svg'
 import { FaFacebookF, FaInstagram, FaSquareXTwitter, FaYoutube } from "react-icons/fa6"
+import { FaGooglePlay, FaCcVisa, FaCcMastercard, FaCcPaypal, FaGooglePay, FaCcApplePay } from "react-icons/fa6"
+import { GrAppleAppStore } from "react-icons/gr"
+
 
 const currentYear = new Date().getFullYear();
 
 function Footer() {
 
+    const paymentMethods = [
+        {
+            id: 1,
+            icon: FaCcVisa
+        },
+        {
+            id: 2,
+            icon: FaCcMastercard
+        },
+        {
+            id: 3,
+            icon: FaCcPaypal
+        },
+        {
+            id: 4,
+            icon: FaGooglePay
+        },
+        {
+            id: 5,
+            icon: FaCcApplePay
+        },
+    ];
+
+    const socialMedia = [
+        {
+            id: 1,
+            icon: FaFacebookF,
+            color: 'white'
+        },
+        {
+            id: 2,
+            icon: FaInstagram,
+            color: '#d62976'
+        },
+        {
+            id: 3,
+            icon: FaSquareXTwitter,
+            color: 'black'
+        },
+        {
+            id: 4,
+            icon: FaYoutube,
+            color: 'red'
+        },
+    ];
+
     return (
-        <div className='bg-primary p-5 flex flex-col gap-10'>
+        <div className='bg-primary p-5 flex flex-col gap-10 animate-grow'>
             <div className='flex gap-12.5 flex-col md:flex-row'>
                 <div className='flex flex-col gap-7 flex-2'>
                     <h4 className='uppercase text-on-primary font-black text-3xl md:text-4xl cursor-pointer'>m&m</h4>
@@ -23,35 +64,21 @@ function Footer() {
                         We deliver curated, high-quality products with a seamless shopping experience and trusted customer care.
                     </p>
                     <div className='flex gap-5'>
-                        <a href='#' className='w-8 md:w-10 hover:scale-[0.8] duration-300'>
-                            <img
-                                className='w-full'
-                                src={AppleStore}
-                                alt='Get it on apple store' />
+                        <a href='#' className='w-fit text-on-primary hover:scale-[0.8] duration-300'>
+                            <GrAppleAppStore className='size-8 md:size-10' />
                         </a>
-                        <a href='#' className='w-8 md:w-10 hover:scale-[0.8] duration-300'>
-                            <img
-                                className='w-full'
-                                src={GooglePlay}
-                                alt='Get it on google play' />
+                        <a href='#' className='w-fit text-on-primary hover:scale-[0.8] duration-300'>
+                            <FaGooglePlay className='size-6 md:size-8' />
                         </a>
                     </div>
-                    <div className=''>
-                        <p className='capitalize text-on-primary font-bold text-xl mb-5'>our social media</p>
-
+                    <div className='gap-5'>
+                        <p className='capitalize text-on-primary font-bold text-xl mb-2.5'>our social media</p>
                         <div className='flex gap-2.5'>
-                            <a href='#' className='w-8 h-8 md:w-10 md:h-10 hover:scale-[0.8] duration-300'>
-                                <FaFacebookF className='w-full h-full text-white' />
-                            </a>
-                            <a href='#' className='w-8 h-8 md:w-10 md:h-10 hover:scale-[0.8] duration-300'>
-                                <FaInstagram className='w-full h-full text-pink-700' />
-                            </a>
-                            <a href='#' className='w-8 h-8 md:w-10 md:h-10 hover:scale-[0.8] duration-300'>
-                                <FaSquareXTwitter className='w-full h-full' />
-                            </a>
-                            <a href='#' className='w-8 h-8 md:w-10 md:h-10 hover:scale-[0.8] duration-300'>
-                                <FaYoutube className='w-full h-full text-red-500' />
-                            </a>
+                            {socialMedia.map(value => (
+                                <a key={value.id} href='#' className={`w-fit hover:scale-[0.8] duration-300`}>
+                                    <value.icon className='size-6 md:size-8' style={{ color: value.color }} />
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -116,13 +143,8 @@ function Footer() {
 
             <hr className='text-on-primary' />
 
-            <div className='flex  flex-wrap gap-5 justify-center pr-5'>
-                <img className='w-16 md:w-22' src={Visa} alt='Visa' />
-                <img className='w-16 md:w-22' src={MasterCard} alt='MasterCard' />
-                <img className='w-16 md:w-22' src={Paypal} alt='PayPal' />
-                <img className='w-16 md:w-22' src={AmericanExpress} alt='Amex' />
-                <img className='w-16 md:w-22' src={ApplePay} alt='Apple Pay' />
-                <img className='w-16 md:w-22' src={GooglePay} alt='Google Pay' />
+            <div className='flex flex-wrap gap-5 justify-center pr-5'>
+                {paymentMethods.map(value => <value.icon key={value.id} className={`size-10 md:size-16 text-on-primary`} />)}
             </div>
 
             <div className=''>
