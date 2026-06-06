@@ -1,5 +1,5 @@
-import CategoryList from '@/components/ui/categoryList'
-import Sections from '@/components/ui/sections'
+import CategoryList from '@/features/home/components/categoryList'
+import Sections from '@/features/home/components/sections'
 
 function Hero() {
 

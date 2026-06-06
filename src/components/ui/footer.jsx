@@ -76,7 +76,7 @@ function Footer() {
                         <div className='flex gap-2.5'>
                             {socialMedia.map(value => (
                                 <a key={value.id} href='#' className={`w-fit hover:scale-[0.8] duration-300`}>
-                                    <value.icon className='size-6 md:size-8' style={{ color: value.color }} />
+                                    <value.icon className='size-6 md:size-8 text-on-primary' />
                                 </a>
                             ))}
                         </div>

@@ -1,18 +1,12 @@
-import Footer from '@/components/ui/footer'
-import Header from '@/components/ui/header'
-import Hero from '@/components/ui/hero'
-import Services from '@/components/ui/services'
+import Router from '@/app/router'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <Services />
-      <Footer />
+      <Router />
     </>
   )
 }
 
-export default App
+export default App;
