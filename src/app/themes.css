@@ -26,9 +26,16 @@
     --color-bg-secondary: #F2F4F5;
     /* Very light gray for section blocks */
 
-    /* Borders & Inputs */
     --color-border: #E4E7E9;
     --color-border-hover: #A3AED0;
+
+    --cart-bg: #F59E0B;
+    --cart-hover: #D97706;
+    --cart-text: #0F172A;
+
+    --buy-bg: #0F172A;
+    --buy-hover: #334155;
+    --buy-text: #FFFFFF;
 
     --color-shadow: rgba(25, 28, 31, 0.16);
     --color-shadow-md: rgba(25, 28, 31, 0.24);
@@ -66,6 +73,14 @@
     /* Borders & Inputs (Dark Mode)*/
     --color-border: #334155;
     --color-border-hover: #475569;
+
+    --cart-bg: #F59E0B;
+    --cart-hover: #D97706;
+    --cart-text: #0F172A;
+
+    --buy-bg: #1E293B;
+    --buy-hover: #334155;
+    --buy-text: #FFFFFF;
 
     --color-shadow: rgba(0, 0, 0, 0.65);
     --color-shadow-md: rgba(0, 0, 0, 0.85);
@@ -106,6 +121,14 @@
     /* Borders & Inputs */
     --color-border: var(--color-border);
     --color-border-hover: var(--color-border-hover);
+
+    --color-cart-bg: var(--cart-bg);
+    --color-cart-hover: var(--cart-hover);
+    --color-cart-text: var(--cart-text);
+
+    --color-buy-bg: var(--buy-bg);
+    --color-buy-hover: var(--buy-hover);
+    --color-buy-text: var(--buy-text);
 
     --color-shadow: var(--color-shadow);
     --color-shadow-md: var(--color-shadow-md);

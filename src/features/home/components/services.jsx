@@ -33,7 +33,7 @@ function Services() {
         },
     ]
     return (
-        <div className='flex flex-nowrap h-20 pt-2 pb-2 animate-grow overflow-hidden bg-border'>
+        <div className='flex flex-nowrap h-20 pt-2 pb-2 animate-grow overflow-hidden bg-bg-secondary'>
             <div className='flex flex-nowrap w-max animate-loop-left hover:[animation-play-state:paused] duration-300'>
                 {services.map(value => (
                     <div key={value.title} className='w-52 flex gap-2 justify-evenly items-center text-text-main flex-auto'>
