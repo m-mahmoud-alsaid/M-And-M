@@ -28,12 +28,12 @@ function Sections() {
         }];
 
     return (
-        <div className='animate-come-from-right flex-2 grid gap-2.5 grid-cols-1 md:grid-cols-2 md:gap-5'>
+        <div className='self-start animate-come-from-right flex-1 grid gap-2.5 grid-cols-1 md:grid-cols-2 md:gap-5'>
             {sections.map(value => (
                 <div
                     key={value.color}
-                    className={`shadow-2xl shadow-shadow-md bg-cover bg-center bg-no-repeat aspect-21/9 md:aspect-3/1 cursor-pointer rounded-lg hover:scale-[0.9] duration-300 transition-all`}
-                    style={{ backgroundImage: `url(${value.img})` }}>
+                    className={`shadow-2xl shadow-shadow-md aspect-21/9 md:aspect-3/1 overflow-hidden cursor-pointer rounded-lg hover:scale-90 duration-300 transition-all`}>
+                    <img className='object-cover object-center w-full h-full' src={value.img} alt='Section Image' />
                 </div>
             ))}
         </div>
