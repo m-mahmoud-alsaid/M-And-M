@@ -85,10 +85,7 @@
     --color-shadow: rgba(0, 0, 0, 0.65);
     --color-shadow-md: rgba(0, 0, 0, 0.85);
 
-    --glassy-shimmer: linear-gradient(90deg,
-            rgba(30, 41, 59, 0) 0%,
-            rgba(26, 92, 255, 0.15) 50%,
-            rgba(30, 41, 59, 0) 100%);
+    --glassy-shimmer: linear-gradient(90deg, rgba(30, 41, 59, 0) 0%, rgba(26, 92, 255, 0.15) 50%, rgba(30, 41, 59, 0) 100%);
 }
 
 @theme inline {
@@ -136,7 +133,7 @@
     --color-glassy-shimmer: var(--glassy-shimmer);
 
     --animate-loop-left: loop-left 8s linear 0s infinite;
-    --animate-opacity: opacity 0.3s ease-in 0s forwards;
+    --animate-opacity: opacity 0.5s ease-out 0s forwards;
     --animate-come-from-top: come-from-top 0.5s ease-out 0s forwards;
     --animate-come-from-bottom: come-from-bottom 0.5s ease-out 0s forwards;
     --animate-come-from-left: come-from-left 0.5s ease-out 0s forwards;

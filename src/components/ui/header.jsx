@@ -9,7 +9,7 @@ function Header() {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <div className='flex flex-col gap-5 bg-primary p-5 animate-come-from-top relative z-50 shadow-2xl shadow-shadow-md'>
+        <div className='before:z-10 flex flex-col gap-5 bg-primary p-5 animate-come-from-top relative z-50 shadow-2xl shadow-shadow-md'>
             <div className='flex justify-end md:justify-between items-center'>
                 <p className='text-on-primary hidden md:block duration-300'>Upgrade your everyday. Explore the M&M collection.</p>
                 <div className=''>
@@ -42,7 +42,7 @@ function Header() {
                     </button>
 
                     <div className='flex gap-2.5 items-center ml-auto'>
-                        <button className=' flex items-center justify-center rounded-lg bg-secondary hover:bg-secondary-hover transition-all duration-300 w-10 h-10'>
+                        <button className='flex items-center justify-center rounded-lg bg-secondary hover:bg-secondary-hover transition-all duration-300 w-10 h-10'>
                             <FaShoppingCart className='size-6' />
                         </button>
                         <div className=''>

@@ -9,7 +9,7 @@ import { IoEye } from "react-icons/io5"
 function ProductDetails() {
 
     return (
-        <div className='flex flex-col gap-10 m-5'>
+        <div className='flex flex-col gap-10 m-5 md:m-10 duration-300'>
             <div className='block sm:hidden'>
                 <ProductTitle />
             </div>
