@@ -4,8 +4,10 @@ import Sections from '@/features/home/components/sections'
 function Hero() {
 
     return (
-        <div className='m-2.5 md:m-5 md:gap-5 flex gap-2.5'>
-            <CategoryList />
+        <div className='m-2.5 max-h-96 overflow-y-auto md:m-5 md:gap-5 flex gap-2.5'>
+            <div className='max-h-96'>
+                <CategoryList />
+            </div>
             <Sections />
         </div>
     )
