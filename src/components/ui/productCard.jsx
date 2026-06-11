@@ -3,7 +3,7 @@ import Image from '@/assets/product.webp'
 function ProductCard() {
 
     return (
-        <div onClick={() => console.log('Clicked.')} className={`relative z-0 before:block before:absolute before:inset-0 before:bg-[linear-gradient(90deg,rgba(242,244,245,0)_10%,rgba(255,255,255,50%)_50%,rgba(242,244,245,0)_90%)] before:animate-glassy-shimmer before:text-black before:z-10 animate-grow cursor-pointer shadow-lg group shadow-shadow-md bg-bg-secondary text-text-main rounded-2xl overflow-hidden border border-border hover:scale-90 duration-300 transition-all`}>
+        <div onClick={() => console.log('Clicked.')} className={`relative z-0 before:block before:absolute before:inset-0 before:bg-[linear-gradient(90deg,rgba(30,41,59,0)_10%,rgba(255,255,255,0.5)_50%,rgba(30,41,59,0)_90%)] before:animate-glassy-shimmer before:text-black before:z-10 cursor-pointer shadow-lg group shadow-shadow-md bg-bg-secondary text-text-main rounded-2xl overflow-hidden border border-border hover:scale-90 duration-300 transition-all`}>
             <div className='aspect-square overflow-hidden'>
                 <img className='w-full h-full object-cover object-center group-hover:grayscale duration-300 transition-all' src={Image} alt='Product Image' />
             </div>
