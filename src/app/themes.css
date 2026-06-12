@@ -88,6 +88,13 @@
     --glassy-shimmer: linear-gradient(90deg, rgba(30, 41, 59, 0) 0%, rgba(26, 92, 255, 0.15) 50%, rgba(30, 41, 59, 0) 100%);
 }
 
+@utility my-fade-in {
+    animation: fade-in 1s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+    animation-fill-mode: both;
+}
+
 @theme inline {
     /* Brand Colors */
     --color-primary: var(--color-primary);
@@ -133,7 +140,6 @@
     --color-glassy-shimmer: var(--glassy-shimmer);
 
     --animate-loop-left: loop-left 8s linear 0s infinite;
-    --animate-opacity: opacity 0.5s ease-out 0s forwards;
     --animate-come-from-top: come-from-top 0.5s ease-out 0s forwards;
     --animate-come-from-bottom: come-from-bottom 0.5s ease-out 0s forwards;
     --animate-come-from-left: come-from-left 0.5s ease-out 0s forwards;
@@ -148,16 +154,6 @@
 
         to {
             transform: translateX(-25%);
-        }
-    }
-
-    @keyframes opacity {
-        from {
-            opacity: 0
-        }
-
-        to {
-            opacity: 1;
         }
     }
 
@@ -208,6 +204,18 @@
 
         to {
             transform: scale(1);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 
