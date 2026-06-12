@@ -11,7 +11,7 @@ function Router() {
             <Route path='/' element={<Navigate to='/home' />}></Route>
             <Route path='/home' element={<Home />}>
                 <Route index element={<HomeContent />}></Route>
-                <Route path='products' element={<Products />}></Route>
+                <Route path='products/:id' element={<Products />}></Route>
                 <Route path='category' element={<CategoryProducts />}></Route>
             </Route>
         </Routes>
