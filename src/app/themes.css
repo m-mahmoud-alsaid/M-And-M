@@ -91,7 +91,7 @@
 @utility my-fade-in {
     animation: fade-in 1s ease-in;
     animation-timeline: view();
-    animation-range: entry 0% entry 100%;
+    animation-range: entry 0% entry 70%;
     animation-fill-mode: both;
 }
 
