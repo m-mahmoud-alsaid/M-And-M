@@ -22,7 +22,7 @@ function ProductDetails({ id }) {
 
             <div className='grid grid-cols-3 sm:grid-cols-5 gap-5'>
                 <div className='col-span-3 sm:col-span-2 lg:col-span-1 animate-come-from-left'>
-                    <div className='relative aspect-square group'>
+                    <div className='relative aspect-square group overflow-hidden'>
                         <img className='group-hover:scale-125 transition-all duration-300 rounded-xl w-full h-full object-cover object-center' src={product.images[0] || ProductImage} alt='Product Image' />
                         <button className='flex items-center justify-center absolute top-2.5 right-2.5 bg-slate-900/40 group-hover:bg-slate-900/80 w-8 h-8 rounded-full duration-300 transition-all'>
                             <IoEye className='text-white' />

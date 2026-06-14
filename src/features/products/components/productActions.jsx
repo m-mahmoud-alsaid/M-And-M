@@ -24,7 +24,7 @@ function ProductActions() {
     };
 
     return (
-        <div className='flex gap-2.5 md:gap-5 text-base sm:text-lg md:text-xl text-white'>
+        <div className='flex gap-2.5 md:gap-5 text-lg md:text-xl text-white'>
             <div className='flex-1'>
                 <Button details={firstDetails} />
             </div>

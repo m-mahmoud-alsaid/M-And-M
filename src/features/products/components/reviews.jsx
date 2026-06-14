@@ -4,10 +4,10 @@ function Reviews({ product }) {
 
     return (
         <div className='text-text-main animate-grow'>
-            <p className='capitalize font-bold mb-2.5 text-lg md:text-xl duration-300 transition-all'>reviews ({product.reviews.length})</p>
+            <p className='capitalize font-bold mb-2.5 text-xl md:text-2xl duration-300 transition-all'>reviews ({product.reviews.length})</p>
             <hr className='' />
 
-            <div className='flex flex-col gap-8 mt-5 mb-5 bg-bg-secondary rounded'>
+            <div className='flex flex-col gap-8 mt-5 mb-5 bg-bg-secondary rounded text-lg md:text-xl'>
                 <div className='grid grid-cols-1'>
                     {product.reviews.map((value, index) => (
                         <div key={index} className='border-b border-dashed border-text-muted p-5'>
