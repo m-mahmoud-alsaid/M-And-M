@@ -27,7 +27,7 @@ function ProductSection() {
         },
     ];
 
-    // if (allLoading || smartPhonesLoading || groceriesLoading) return <p className='text-3xl text-text-main'>Loading...</p>
+    if (allLoading || smartPhonesLoading || groceriesLoading) return <p className='text-3xl text-text-main'>Loading...</p>
 
     return (
         <div className='my-fade-in grid grid-cols-1 gap-15 m-2.5 mt-10 mb-10 md:m-5 md:mb-10 md:mt-10'>

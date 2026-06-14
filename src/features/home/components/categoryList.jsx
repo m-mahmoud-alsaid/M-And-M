@@ -6,7 +6,7 @@ import products from '@/features/home/api/products'
 function CategoryList() {
     const { data: categoryList, loading } = useFetch(getProducts, products.getAllCategories);
 
-    // if (loading) return <p className='text-text-main text-4xl'>Loading...</p>
+    if (loading) return <p className='text-text-main text-4xl'>Loading...</p>
 
     return (
         <ul className='animate-come-from-left rounded-lg h-full shadow-lg shadow-shadow-md overflow-x-hidden overflow-y-auto bg-bg-secondary text-text-main transition-all duration-300'>
