@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import One from '@/assets/one.png'
 import Two from '@/assets/two.png'
 import Three from '@/assets/three.png'
@@ -5,26 +6,28 @@ import Four from '@/assets/four.png'
 
 function Sections() {
 
+    const navigate = useNavigate();
+
     const sections = [
         {
-            name: 'Sales',
             color: '#C92424',
-            img: One
+            img: One,
+            path: 'category/smartPhones'
         },
         {
-            name: 'Summer',
             color: '#FFCB00',
-            img: Two
+            img: Two,
+            path: 'category/mens-shirts'
         },
         {
-            name: 'Winter',
             color: '#0B3599',
-            img: Three
+            img: Three,
+            path: 'category/beauty'
         },
         {
-            name: 'Spring',
             color: '#40B44A',
-            img: Four
+            img: Four,
+            path: 'category/home-decoration'
         }];
 
     return (
@@ -32,6 +35,7 @@ function Sections() {
             {sections.map(value => (
                 <div
                     key={value.color}
+                    onClick={() => navigate(value.path)}
                     className={`shadow-2xl shadow-shadow-md aspect-21/9 md:aspect-3/1 overflow-hidden cursor-pointer rounded-lg hover:scale-90 duration-300 transition-all`}>
                     <img className='object-cover object-center w-full h-full' src={value.img} alt='Section Image' />
                 </div>
