@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom'
 import { FaFacebookF, FaInstagram, FaSquareXTwitter, FaYoutube } from "react-icons/fa6"
 import { FaGooglePlay, FaCcVisa, FaCcMastercard, FaCcPaypal, FaGooglePay, FaCcApplePay } from "react-icons/fa6"
 import { GrAppleAppStore } from "react-icons/gr"
-
+import useFetch from '@/hooks/useFetch'
+import getProducts from '@/features/home/services/fetchAll'
+import products from '@/features/home/api/products'
 
 const currentYear = new Date().getFullYear();
 
 function Footer() {
-
+    const { data: categoryList } = useFetch(getProducts, products.getAllCategories);
     const paymentMethods = [
         {
             id: 1,
@@ -85,19 +87,12 @@ function Footer() {
 
                 <div className='flex flex-col flex-1'>
                     <p className='text-on-primary font-bold text-xl mb-2.5'>Categories</p>
-                    <ul className='flex flex-col gap-2.5 text-on-primary'>
-                        <li className='group'>
-                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Electronics</Link>
-                        </li>
-                        <li className='group'>
-                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Men's Fashion</Link>
-                        </li>
-                        <li className='group'>
-                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Women's Fashion</Link>
-                        </li>
-                        <li className='group'>
-                            <Link to='' className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>Home & Lifestyle</Link>
-                        </li>
+                    <ul className='flex flex-col gap-2.5 text-on-primary max-h-48 overflow-y-auto'>
+                        {categoryList?.map((value, index) => (
+                            <li key={index} className='group'>
+                                <Link to={`category/${value}`} className='opacity-80 text-base md:text-lg group-hover:underline group-hover:underline-offset-4'>{value}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
