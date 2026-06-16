@@ -2,6 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 import Home from '@/features/home/routes/home'
 import HomeContent from '@/features/home/components/homeContent'
 import Products from '@/features/products/routes/products'
+import Cart from '@/features/cart/routes/cart'
 import CategoryProducts from '@/features/products/routes/categoryProducts'
 import NotFound from '@/components/ui/notFound'
 
@@ -14,6 +15,7 @@ function Router() {
                 <Route index element={<HomeContent />} />
                 <Route path='products/:id' element={<Products />} />
                 <Route path='category/:category' element={<CategoryProducts />} />
+                <Route path='cart' element={<Cart />} />
             </Route>
 
             <Route path='*' element={<NotFound />} />
