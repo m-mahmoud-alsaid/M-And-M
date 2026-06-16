@@ -1,11 +1,14 @@
 import ThemeProvider from '@/stores/theme/themeProvider'
+import CartProvider from '@/stores/cart/cartProvider'
 
 function Provider({ children }) {
 
     return (
-        <ThemeProvider>
-            {children}
-        </ThemeProvider>
+        <CartProvider>
+            <ThemeProvider>
+                {children}
+            </ThemeProvider>
+        </CartProvider>
     )
 }
 

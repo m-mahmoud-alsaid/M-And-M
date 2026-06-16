@@ -2,8 +2,15 @@ import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 import DevAccounts from '@/components/ui/devAccounts'
 import { FaAngleUp } from "react-icons/fa"
+import { useContext, useEffect } from 'react'
+import CartContext from '@/stores/cart/cartContext'
 
 function MainLayout({ children }) {
+    const { cartList, pushProduct } = useContext(CartContext);
+
+    useEffect(() => {
+        console.log(cartList);
+    }, [cartList]);
 
     return (
         <>
