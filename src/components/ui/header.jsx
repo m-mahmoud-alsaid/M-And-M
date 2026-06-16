@@ -4,8 +4,10 @@ import { MdDarkMode } from "react-icons/md"
 import useTheme from '@/stores/theme/useTheme'
 import { AiOutlineHeart } from "react-icons/ai"
 import { FaShoppingCart } from "react-icons/fa"
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
+    const navigate = useNavigate();
     const { theme, toggleTheme } = useTheme();
 
     return (
@@ -31,7 +33,7 @@ function Header() {
             </div>
 
             <div className='flex flex-col items-center md:flex-row md:justify-between gap-5'>
-                <h1 className='cursor-pointer text-on-primary font-black uppercase text-4xl md:text-5xl lg:text-6xl duration-300 transition-all'>m&m</h1>
+                <h1 onClick={() => navigate('/home')} className='cursor-pointer text-on-primary font-black uppercase text-4xl md:text-5xl lg:text-6xl duration-300 transition-all hover:scale-90'>m&m</h1>
                 <div className='h-10 flex rounded-lg overflow-hidden'>
                     <input className='w-52 focus:w-64 sm:w-64 sm:focus:w-80 lg:w-72 lg:focus:w-96 text-text-main bg-border pl-4 outline-0 placeholder-text-main duration-300 transition-all' type='text' placeholder='Search for products...' />
                     <button className='capitalize bg-secondary font-bold pr-2 pl-2 hover:bg-secondary-hover duration-300 transition-colors'>search</button>

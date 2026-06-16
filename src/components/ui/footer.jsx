@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaFacebookF, FaInstagram, FaSquareXTwitter, FaYoutube } from "react-icons/fa6"
 import { FaGooglePlay, FaCcVisa, FaCcMastercard, FaCcPaypal, FaGooglePay, FaCcApplePay } from "react-icons/fa6"
 import { GrAppleAppStore } from "react-icons/gr"
@@ -9,6 +9,7 @@ import products from '@/features/home/api/products'
 const currentYear = new Date().getFullYear();
 
 function Footer() {
+    const navigate = useNavigate();
     const { data: categoryList } = useFetch(getProducts, products.getAllCategories);
     const paymentMethods = [
         {
@@ -60,7 +61,7 @@ function Footer() {
         <div className='bg-primary p-5 flex flex-col gap-10 animate-grow'>
             <div className='flex gap-12.5 flex-col md:flex-row'>
                 <div className='flex flex-col gap-7 flex-2'>
-                    <h4 className='uppercase text-on-primary font-black text-3xl md:text-4xl cursor-pointer'>m&m</h4>
+                    <h4 onClick={() => navigate('/home')} className='uppercase text-on-primary font-black text-3xl md:text-4xl cursor-pointer hover:scale-90 duration-300 w-fit'>m&m</h4>
                     <p className='text-on-primary text-base md:text-lg opacity-80'>
                         Your ultimate destination for premium tech, fashion, and everyday essentials.
                         We deliver curated, high-quality products with a seamless shopping experience and trusted customer care.
